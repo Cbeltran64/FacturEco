@@ -1,0 +1,218 @@
+/*registro_usuario*/
+.form_register {
+	width: 450px;
+	margin: auto;
+}
+
+.form_register h1{
+	text-align: center;
+	margin-bottom: 30px;
+	color: #AD5E5E;
+}
+hr{
+	width: 100%;
+	height: 1px;
+	margin: 10px 0;
+	display: block;
+}
+
+form{
+	background: #ffF;
+	margin: auto;
+	padding: 20px 50px;
+	border: 1px solid #d1d1d1;
+}
+label{
+	display: block;
+	font-size: 12pt;
+	font-family: 'GothamBook';
+	margin: 15px auto 15px auto;
+}
+
+input,select{
+	display: block;
+	width: 100%;
+	font-size: 11pt;
+	padding: 5px;
+	border: 1px solid #85929e;
+	border-radius: 5px;
+}
+
+.notItemone option:first-child{
+	display: none;
+}
+
+.btn_save{
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+	background-size: 200%;
+	font-size: 1.2rem;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.alert{
+	width: 100%;
+	background: #66e07d66;
+	border-radius: 6px;
+	margin: 20px auto;
+}
+
+.msg_error{
+	color: #e65656;
+	font-size: 12pt;
+	font-family: 'GothamBook';
+}
+.msg_save{
+	color: #126e00;
+	font-size: 12pt;
+	font-family: 'GothamBook';
+}
+.aler, p{
+	padding: 10px;
+
+}
+/*fin registro_usuario*/
+/* Lista Usuarios */
+#container h1{
+	font-size: 35px;
+	display: inline-block;
+}
+.btn_new{
+	display: inline-block;
+	background: #239baa;
+	color: #fff;
+	padding: 5px 25px;
+	border-radius: 4px;
+	margin: 20px 0;
+}
+
+table{
+	border-collapse: collapse;
+	font-size: 12pt;
+	font-family: 'GothamBook';
+	width: 100%;
+}
+table th{
+	text-align: left;
+	background: #3d7ba8;
+	color: #fff;
+	padding: 10px;
+	text-align: left;
+}
+table tr:nth-child(odd){
+	background-color: white;
+}
+table td{
+	padding: 10px;
+}
+table tr:hover{
+	background: #4ce5b2;
+}
+
+.link_edit{
+	color: #239baa;
+}
+.link_delete{
+	color: #e65656;
+}
+/*paginador*/
+.paginador ul{
+	padding: 15px;
+	list-style: none;
+	background: #fff;
+	margin-top: 15px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-end;
+}
+.paginador a,.pageSelected{
+	color: #32be8f;
+	border: 1px solid #ddd;
+	padding: 5px;
+	display: inline-block;
+	text-align: center;
+	font-size: 14px;
+	width: 35px;
+}
+.paginador a:hover{
+	background: #ddd;
+	color: #fff;
+}
+.pageSelected{
+	color: #fff;
+	background: #32be8f;
+	border: 1px solid #32be8f;
+}
+/*fin paginador*/
+/* Fin Lista Usuarios */
+/* Eliminar_confirmar */
+
+.data_delete{
+	text-align: center;
+}
+
+
+.data_delete h2 {
+	font-size: 12px;
+
+}
+
+.data_delete span {
+	font-weight: bold;
+	font-size: 12pt;
+	color: #4f82d4;
+}
+
+.btn_cancel, .btn_ok{
+	width: 124px;
+	background: #478ba2;
+	color: #fff;
+	display: inline-block;
+	padding: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 15px;
+}
+.btn_cancel{
+	background: #e65656;
+}
+
+.data_delete form{
+	background: initial;
+	margin: auto;
+	padding: 20px 50px;
+	border: 0px;
+}
+/**Buscar*/
+.form_search{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	float: right;
+	background: initial;
+	padding: 10px;
+	border-radius: 10px;
+}
+.form_search .btn_search{
+	background: #1faac8;
+	color: #FFF;
+	padding: 0 20px;
+	border: 0;
+	cursor: pointer;
+	margin-left: 10px;
+}
