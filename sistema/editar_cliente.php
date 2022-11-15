@@ -80,13 +80,13 @@
             <div class="alert"><?php echo isset($alert) ? $alert : '';?></div>
             <form action="" method="post">
                 <input type="hidden" name="id" value="<?php echo $idcliente?>">
-                <label for="cc"><i class="fas fa-address-card"></i> Cedula de Ciudadania</label>
+                <label for="cc"><i class="fas fa-address-card"></i> Cedula de Ciudadania: </label>
                 <input type="number" name="cc" id="cc" placeholder="Numero de Cedula" value="<?php echo $cc?>">
-                <label for="nombre"><i class="fas fa-user"></i> Nombre</label>
+                <label for="nombre"><i class="fas fa-user"></i> Nombre: <span style="color: red;"> *</span></label>
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre Completo" value="<?php echo $nombre?>">
-                <label for="telefono"><i class="fas fa-phone"></i> Telefono</label>
+                <label for="telefono"><i class="fas fa-phone"></i> Telefono: <span style="color: red;"> *</span></label>
                 <input type="number" name="telefono" id="telefono" placeholder="Telefono" value="<?php echo $telefono?>">
-                <label for="direccion"><i class="fas fa-map-pin"></i> Direccion</label>
+                <label for="direccion"><i class="fas fa-map-pin"></i> Direccion: <span style="color: red;"> *</span></label>
                 <input type="text" name="direccion" id="direccion" placeholder="Direcion Completa" value="<?php echo $direccion?>">
                 
                 <button type="submit" class="btn_save"><i class="fas fa-edit"></i> Actualizar Cliente</button>

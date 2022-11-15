@@ -47,15 +47,15 @@
             <hr>
             <div class="alert"><?php echo isset($alert) ? $alert : '';?></div>
             <form action="" method="post">
-                <label for="nombre"><i class="fas fa-user"></i> Nombre</label>
+                <label for="nombre"><i class="fas fa-user"></i> Nombre: <span style="color: red;"> *</span></label>
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre Completo">
-                <label for="correo"><i class="fas fa-envelope"></i> Correo Electronico</label>
+                <label for="correo"><i class="fas fa-envelope"></i> Correo Electronico: <span style="color: red;"> *</span></label>
                 <input type="email" name="correo" id="correo" placeholder="Correo Electronico">
-                <label for="usuario"><i class="fas fa-user"></i> Usuario</label>
+                <label for="usuario"><i class="fas fa-user"></i> Usuario: <span style="color: red;"> *</span></label>
                 <input type="text" name="usuario" id="usuario" placeholder="Usuario">
-                <label for="clave"><i class="fas fa-lock"></i> Contraseña</label>
+                <label for="clave"><i class="fas fa-lock"></i> Contraseña: <span style="color: red;"> *</span></label>
                 <input type="password" name="clave" id="clave" placeholder="Contraseña">
-                <label for="rol"><i class="fas fa-cogs"></i> Tipo de Usuario</label>
+                <label for="rol"><i class="fas fa-cogs"></i> Tipo de Usuario: <span style="color: red;"> *</span></label>
 
                 <?php
                     include "../conexion.php";

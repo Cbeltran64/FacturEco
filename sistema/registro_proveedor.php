@@ -1,9 +1,13 @@
 <?php
     session_start();
+    if($_SESSION['rol'] != 1 and $_SESSION['rol'] != 2)
+    {
+        header("location: ./");
+    }
     if (!empty($_POST)) {
         $alert='';
-        if (empty($_POST['nombre']) || empty($_POST['telefono']) || empty($_POST['direccion'])) {
-            $alert = '<p class="msg_error">Todos los campos son obligatorios.</p>';
+        if (empty($_POST['proveedor']) || empty($_POST['contacto'])  || empty($_POST['telefono']) || empty($_POST['direccion'])) {
+            $alert = '<p class="msg_error">Todos los campos marcados con el * son obligatorios.</p>';
         }else{
             include "../conexion.php";
             $cc = $_POST['cc'];
@@ -35,27 +39,27 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Registro Cliente</title>
+	<title>Registro Proveedor</title>
 	<?php include "include/scripts.php"?>
 </head>
 <body>
 	<?php include "include/header.php";?>
 	<section id="container">
         <div class ="form_register">
-            <h1><i class="fas fa-user-plus"></i> Registro Cliente</h1>
+            <h1><i class="fas fa-building"></i> Registro Proveedor</h1>
             <hr>
             <div class="alert"><?php echo isset($alert) ? $alert : '';?></div>
             <form action="" method="post">
-                <label for="cc"><i class="fas fa-address-card"></i> Cedula de Ciudadania:</label>
-                <input type="number" name="cc" id="cc" placeholder="Numero de Cedula">
-                <label for="nombre"><i class="fas fa-user"></i> Nombre: <span style="color: red;"> *</span></label>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre Completo">
+                <label for="proveedor"><i class="fas fa-warehouse"></i> Proveedor:<span style="color: red;"> *</span></label>
+                <input type="number" name="proveedor" id="proveedor" placeholder="Nombre del Proveedor">
+                <label for="contacto"><i class="fas fa-user"></i> Contacto: <span style="color: red;"> *</span></label>
+                <input type="text" name="contacto" id="contacto" placeholder="Nombre completo del contacto">
                 <label for="telefono"><i class="fas fa-phone"></i> Telefono: <span style="color: red;"> *</span></label>
                 <input type="number" name="telefono" id="telefono" placeholder="Telefono">
                 <label for="direccion"><i class="fas fa-map-pin"></i> Direccion: <span style="color: red;"> *</span></label>
                 <input type="text" name="direccion" id="direccion" placeholder="Direcion Completa">
                 
-                <button type="submit" class="btn_save"><i class="far fa-save"></i> Crear Usuario</button>
+                <button type="submit" class="btn_save"><i class="far fa-save"></i> Crear Proveedor</button>
             </form>
         </div>
 	</section>

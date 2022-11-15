@@ -22,13 +22,20 @@
 						<li><a href="./lista_cliente.php"><i class="fas fa-users"></i>  Lista de Clientes</a></li>
 					</ul>
 				</li>
+				<?php
+					if($_SESSION['rol'] == 1 || $_SESSION['rol'] == 2)
+					{	
+				?>
 				<li class="principal">
 					<a href="#"><i class="fas fa-building"></i> Proveedores</a>
 					<ul>
-						<li><a href="#"><i class="fas fa-plus"></i> Nuevo Proveedor</a></li>
+						<li><a href="registro_proveedor.php"><i class="fas fa-plus"></i> Nuevo Proveedor</a></li>
 						<li><a href="#"><i class="fas fa-th-list"></i> Lista de Proveedores</a></li>
 					</ul>
 				</li>
+				<?php
+					}
+				?>
 				<li class="principal">
 					<a href="#"><i class="fas fa-cubes"></i> Productos</a>
 					<ul>
