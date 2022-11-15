@@ -16,28 +16,28 @@
 					}
 				?>
 				<li class="principal">
-					<a href="#">Clientes</a>
+					<a href="#"><i class="fas fa-user"></i> Clientes</a>
 					<ul>
-						<li><a href="./registro_cliente.php">Nuevo Cliente</a></li>
-						<li><a href="./lista_cliente.php">Lista de Clientes</a></li>
+						<li><a href="./registro_cliente.php"><i class="fas fa-user-plus"></i> Nuevo Cliente</a></li>
+						<li><a href="./lista_cliente.php"><i class="fas fa-users"></i>  Lista de Clientes</a></li>
 					</ul>
 				</li>
 				<li class="principal">
-					<a href="#">Proveedores</a>
+					<a href="#"><i class="fas fa-building"></i> Proveedores</a>
 					<ul>
-						<li><a href="#">Nuevo Proveedor</a></li>
-						<li><a href="#">Lista de Proveedores</a></li>
+						<li><a href="#"><i class="fas fa-plus"></i> Nuevo Proveedor</a></li>
+						<li><a href="#"><i class="fas fa-th-list"></i> Lista de Proveedores</a></li>
 					</ul>
 				</li>
 				<li class="principal">
-					<a href="#">Productos</a>
+					<a href="#"><i class="fas fa-cubes"></i> Productos</a>
 					<ul>
-						<li><a href="#">Nuevo Producto</a></li>
-						<li><a href="#">Lista de Productos</a></li>
+						<li><a href="#"><i class="fas fa-plus"></i> Nuevo Producto</a></li>
+						<li><a href="#"><i class="fas fa-list"></i> Lista de Productos</a></li>
 					</ul>
 				</li>
 				<li class="principal">
-					<a href="#">Facturas</a>
+					<a href="#"><i class="fas fa-file-alt"></i> Facturas</a>
 					<ul>
 						<li><a href="#">Nuevo Factura</a></li>
 						<li><a href="#">Facturas</a></li>

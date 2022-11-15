@@ -30,12 +30,12 @@
 
 		 ?>
 		
-		<h1>Lista de usuarios</h1>
-		<a href="registro_usuario.php" class="btn_new">Crear usuario</a>
+		<h1><i class="fas fa-users"></i> Lista de usuarios</h1>
+		<a href="registro_usuario.php" class="btn_new"><i class="fas fa-user-plus"></i> Crear usuario</a>
 		
 		<form action="buscar_usuario.php" method="get" class="form_search">
 			<input type="text" name="busqueda" id="busqueda" placeholder="Buscar" value="<?php echo $busqueda; ?>">
-			<input type="submit" value="Buscar" class="btn_search">
+			<button type="submit" class="btn_search"><i class="fas fa-search"></i></button>
 		</form>
 
 		<table>
@@ -107,11 +107,11 @@
 					<td><?php echo $data["usuario"]; ?></td>
 					<td><?php echo $data['rol'] ?></td>
 					<td>
-						<a class="link_edit" href="editar_usuario.php?id=<?php echo $data["idusuario"]; ?>">Editar</a>
+						<a class="link_edit" href="editar_usuario.php?id=<?php echo $data["idusuario"]; ?>"><i class="far fa-edit"></i> Editar</a>
 
 					<?php if($data["idusuario"] != 1){ ?>
 						|
-						<a class="link_delete" href="eliminar_confirmar_usuario.php?id=<?php echo $data["idusuario"]; ?>">Eliminar</a>
+						<a class="link_delete" href="eliminar_confirmar_usuario.php?id=<?php echo $data["idusuario"]; ?>"><i class="fas fa-trash-alt"></i> Eliminar</a>
 					<?php } ?>
 						
 					</td>
@@ -136,8 +136,8 @@
 				if($pagina != 1)
 				{
 			 ?>
-				<li><a href="?pagina=<?php echo 1; ?>&busqueda=<?php echo $busqueda; ?>">|<</a></li>
-				<li><a href="?pagina=<?php echo $pagina-1; ?>&busqueda=<?php echo $busqueda; ?>"><<</a></li>
+				<li><a href="?pagina=<?php echo 1; ?>"><i class="fas fa-step-backward"></i></a></li>
+				<li><a href="?pagina=<?php echo $pagina-1; ?>"><i class="fas fa-backward"></i></a></li>
 			<?php 
 				}
 				for ($i=1; $i <= $total_paginas; $i++) { 
@@ -153,8 +153,8 @@
 				if($pagina != $total_paginas)
 				{
 			 ?>
-				<li><a href="?pagina=<?php echo $pagina + 1; ?>&busqueda=<?php echo $busqueda; ?>">>></a></li>
-				<li><a href="?pagina=<?php echo $total_paginas; ?>&busqueda=<?php echo $busqueda; ?> ">>|</a></li>
+				<li><a href="?pagina=<?php echo $pagina+1; ?>"><i class="fas fa-forward"></i></a></li>
+				<li><a href="?pagina=<?php echo $total_paginas; ?>"><i class="fas fa-step-forward"></i></a></li>
 			<?php } ?>
 			</ul>
 		</div>

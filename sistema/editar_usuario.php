@@ -81,20 +81,20 @@
 	<?php include "include/header.php";?>
 	<section id="container">
         <div class ="form_register">
-            <h1>Actualizar Usuario</h1>
+            <h1><i class="fas fa-pen-square"></i> Actualizar Usuario</h1>
             <hr>
             <div class="alert"><?php echo isset($alert) ? $alert : '';?></div>
             <form action="" method="post">
                 <input type="hidden" name="idUsuario" value="<?php echo $iduser; ?>">
-                <label for="nombre">Nombre</label>
+                <label for="nombre"><i class="fas fa-user"></i> Nombre</label>
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre Completo" value = "<?php echo $nombre ?>">
-                <label for="correo">Correo Electronico</label>
+                <label for="correo"><i class="fas fa-envelope"></i> Correo Electronico</label>
                 <input type="email" name="correo" id="correo" placeholder="Correo Electronico" value = "<?php echo $correo ?>">
-                <label for="usuario">Usuario</label>
+                <label for="usuario"><i class="fas fa-user"></i> Usuario</label>
                 <input type="text" name="usuario" id="usuario" placeholder="Usuario" value = "<?php echo $usuario ?>">
-                <label for="clave">Contraseña</label>
+                <label for="clave"><i class="fas fa-lock"></i> Contraseña</label>
                 <input type="password" name="clave" id="clave" placeholder="Contraseña">
-                <label for="rol">Tipo de Usuario</label>
+                <label for="rol"><i class="fas fa-cogs"></i> Tipo de Usuario</label>
 
                 <?php
                     include "../conexion.php";
@@ -113,7 +113,7 @@
                         }
                     ?>
                 </select>
-                <input type="submit" value="Actualizar Usuario" class="btn_save">
+                <button type="submit" class="btn_save"><i class="fas fa-edit"></i> Actualizar Usuario</button>
             </form>
         </div>
 	</section>

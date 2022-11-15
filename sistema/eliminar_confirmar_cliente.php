@@ -54,7 +54,7 @@
 	<?php include "include/header.php";?>
 	<section id="container">
         <div class="data_delete">
-            <h1>Eliminar Cliente</h1>
+            <h1><i class="fas fa-user-times fa-5x" style="color: red;"></i></h1>
             <i class="icon-user icon-5x" style="color: #e66262;"></i>
             <h2>¿Está seguro de eliminar el siguiente registro?</h2>
             <p>Nombre del Cliente: <span><?php echo $nombre; ?></span></p>

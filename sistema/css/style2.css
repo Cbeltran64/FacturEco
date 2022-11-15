@@ -88,7 +88,7 @@ input,select{
 	display: inline-block;
 }
 .btn_new{
-	display: flex;
+	display: inline-block;
 	background: #239baa;
 	color: #fff;
 	padding: 5px 25px;
@@ -212,6 +212,7 @@ table tr:hover{
 	background: #1faac8;
 	color: #FFF;
 	padding: 10px;
+	border: 0;
 	cursor: pointer;
 	margin-left: 10px;
 	display: -webkit-flex;
@@ -219,5 +220,5 @@ table tr:hover{
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	border-radius: 12px;
+	border-radius: 8px;
 }
