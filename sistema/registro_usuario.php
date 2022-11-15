@@ -43,7 +43,7 @@
 	<?php include "include/header.php";?>
 	<section id="container">
         <div class ="form_register">
-            <h1>Registro Usuario</h1>
+            <h1><i class="fas fa-user-plus"></i> Registro Usuario</h1>
             <hr>
             <div class="alert"><?php echo isset($alert) ? $alert : '';?></div>
             <form action="" method="post">
@@ -74,7 +74,7 @@
                         }
                     ?>
                 </select>
-                <input type="submit" value="Crear Usuario" class="btn_save">
+                <button type="submit" class="btn_save"><i class="far fa-save"></i> Crear Usuario</button>
             </form>
         </div>
 	</section>

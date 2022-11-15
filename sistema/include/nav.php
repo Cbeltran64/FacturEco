@@ -1,15 +1,15 @@
 <nav>
 			<ul>
-				<li><a href="#">Inicio</a></li>
+				<li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
 				<?php
 					if($_SESSION['rol'] == 1)
 					{	
 				?>
 				<li class="principal">
-					<a href="#">Usuarios</a>
+					<a href="#"><i class="fas fa-users"></i> Usuarios</a>
 					<ul>
-						<li><a href="registro_usuario.php">Nuevo Usuario</a></li>
-						<li><a href="lista_usuario.php">Lista de Usuarios</a></li>
+						<li><a href="registro_usuario.php"><i class="fas fa-user-plus"></i> Nuevo Usuario</a></li>
+						<li><a href="lista_usuario.php"><i class="fas fa-users"></i> Lista de Usuarios</a></li>
 					</ul>
 				</li>
 				<?php

@@ -88,7 +88,7 @@ input,select{
 	display: inline-block;
 }
 .btn_new{
-	display: inline-block;
+	display: flex;
 	background: #239baa;
 	color: #fff;
 	padding: 5px 25px;
@@ -211,8 +211,13 @@ table tr:hover{
 .form_search .btn_search{
 	background: #1faac8;
 	color: #FFF;
-	padding: 0 20px;
-	border: 0;
+	padding: 10px;
 	cursor: pointer;
 	margin-left: 10px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	border-radius: 12px;
 }
