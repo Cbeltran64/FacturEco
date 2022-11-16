@@ -57,13 +57,13 @@
 		<div class="login-content">
 			<form action="" method="post">
 				<img src="recursos/img/avatar.svg">
-				<h2 class="title">Welcome</h2>
+				<h2 class="title">BIENVENIDO</h2>
            		<div class="input-div one">
            		   <div class="i">
            		   		<i class="fas fa-user"></i>
            		   </div>
            		   <div class="div">
-           		   		<input type="text"  name="usuario" class="input" placeholder= "USERNAME">
+           		   		<input type="text"  name="usuario" class="input" placeholder= "Usuario">
            		   </div>
            		</div>
            		<div class="input-div pass">
@@ -71,10 +71,10 @@
            		    	<i class="fas fa-lock"></i>
            		   </div>
            		   <div class="div">
-           		    	<input type="password" name= "clave" class="input" placeholder= "PASSWORD">
+           		    	<input type="password" name= "clave" class="input" placeholder= "Contraseña">
             	   </div>
             	</div>
-            	<a href="#">FORGOT PASSWORD?</a>
+            	<a href="#">¿HAS OLVIDADO TU CONTRASEÑA?</a>
 				<div class="alert"><?php echo isset($alert)? $alert : '';?></div>
             	<input type="submit" class="btn" value="Login">
             </form>

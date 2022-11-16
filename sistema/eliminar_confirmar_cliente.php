@@ -61,8 +61,8 @@
             <p>Cedula de Ciudadania: <span><?php echo $cc; ?></span></p>
             <form method="post" action="">
                 <input type="hidden" name="idcliente" value="<?php echo $idcliente; ?>">
-                <a href="lista_cliente.php" class="btn_cancel">Cancelar</a>
-                <input type="submit" value="Aceptar" class="btn_ok">
+                <a href="lista_cliente.php" class="btn_cancel"><i class="fas fa-ban"></i> Cancelar</a>
+                <button type="submit" class="btn_ok"><i class="fas fa-trash-alt"></i> Eliminar</button>
             </form>
 	</section>
 	<?php include "include/footer.php";?>

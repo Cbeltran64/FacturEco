@@ -10,27 +10,18 @@
             $alert = '<p class="msg_error">Todos los campos marcados con el * son obligatorios.</p>';
         }else{
             include "../conexion.php";
-            $cc = $_POST['cc'];
-            $nombre = $_POST['nombre'];
+            $proveedor = $_POST['proveedor'];
+            $contacto = $_POST['contacto'];
             $telefono = $_POST['telefono'];
             $direccion = $_POST['direccion'];
             $usuario_id = $_SESSION['idUser'];
 
-            $result = 0;
-            if (is_numeric($cc) and $cc !=0) {
-                $query = mysqli_query($conexion,"SELECT * FROM cliente WHERE cc = '$cc'");
-                $result = mysqli_fetch_array($query);
-            }
-
-            if ($result > 0) {
-                $alert = '<p class="msg_error">El Numero de Cudula ya existe.</p>';
+            $query_insert = mysqli_query($conexion,"INSERT INTO proveedor(proveedor,contacto,telefono,direccion,usuario_id) 
+                                                    VALUES('$proveedor','$contacto','$telefono','$direccion','$usuario_id')");
+            if ($query_insert) {
+                $alert = '<p class="msg_save">Proveedor guardado correctamente.</p>';
             }else{
-                $query_insert = mysqli_query($conexion,"INSERT INTO cliente(cc,nombre,telefono,direccion,usuario_id) VALUES('$cc','$nombre','$telefono','$direccion','$usuario_id')");
-                if ($query_insert) {
-                    $alert = '<p class="msg_save">Cliente guardado correctamente.</p>';
-                }else{
-                    $alert = '<p class="msg_error">Error al guardar el cliente.</p>';
-                }
+                $alert = '<p class="msg_error">Error al guardar el Proveedor.</p>';
             }
         }
     }
@@ -51,7 +42,7 @@
             <div class="alert"><?php echo isset($alert) ? $alert : '';?></div>
             <form action="" method="post">
                 <label for="proveedor"><i class="fas fa-warehouse"></i> Proveedor:<span style="color: red;"> *</span></label>
-                <input type="number" name="proveedor" id="proveedor" placeholder="Nombre del Proveedor">
+                <input type="text" name="proveedor" id="proveedor" placeholder="Nombre del Proveedor">
                 <label for="contacto"><i class="fas fa-user"></i> Contacto: <span style="color: red;"> *</span></label>
                 <input type="text" name="contacto" id="contacto" placeholder="Nombre completo del contacto">
                 <label for="telefono"><i class="fas fa-phone"></i> Telefono: <span style="color: red;"> *</span></label>

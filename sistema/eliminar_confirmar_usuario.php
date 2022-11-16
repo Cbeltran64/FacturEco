@@ -62,8 +62,8 @@
             <p>Rol: <span><?php echo $rol; ?></span></p>
             <form method="post" action="">
                 <input type="hidden" name="idusuario" value="<?php echo $idusuario; ?>">
-                <a href="lista_usuario.php" class="btn_cancel">Cancelar</a>
-                <input type="submit" value="Aceptar" class="btn_ok">
+                <a href="lista_cliente.php" class="btn_cancel"><i class="fas fa-ban"></i> Cancelar</a>
+                <button type="submit" class="btn_ok"><i class="fas fa-trash-alt"></i> Eliminar</button>
             </form>
 	</section>
 	<?php include "include/footer.php";?>
