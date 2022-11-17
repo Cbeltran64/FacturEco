@@ -45,7 +45,9 @@
     }
     $iduser = $_GET['id'];
 
-    $sql =  mysqli_query($conexion, "SELECT u.idusuario, u.nombre, u.correo, u.usuario, (u.rol) as idrol, (r.rol) as rol FROM usuario u INNER JOIN rol r ON u.rol = r.idrol WHERE u.idusuario = $iduser");
+    $sql =  mysqli_query($conexion, "SELECT u.idusuario, u.nombre, u.correo, u.usuario, (u.rol) as idrol, (r.rol) as rol 
+                                     FROM usuario u INNER JOIN rol r ON u.rol = r.idrol 
+                                     WHERE u.idusuario = $iduser and u.estatus = 1");
 
     $result_sql = mysqli_num_rows($sql);
     if ($result_sql == 0) {

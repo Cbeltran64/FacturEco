@@ -39,7 +39,7 @@
     $codproveedor = $_REQUEST['id'];
 
     $sql =  mysqli_query($conexion, "SELECT * FROM proveedor 
-                                    WHERE codproveedor = $codproveedor");
+                                    WHERE codproveedor = $codproveedor and estatus = 1");
 
     $result_sql = mysqli_num_rows($sql);
     if ($result_sql == 0) {
