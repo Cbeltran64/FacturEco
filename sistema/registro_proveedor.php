@@ -41,7 +41,7 @@
             <hr>
             <div class="alert"><?php echo isset($alert) ? $alert : '';?></div>
             <form action="" method="post">
-                <label for="proveedor"><i class="fas fa-warehouse"></i> Proveedor:<span style="color: red;"> *</span></label>
+                <label for="proveedor"><i class="fas fa-truck"></i> Proveedor:<span style="color: red;"> *</span></label>
                 <input type="text" name="proveedor" id="proveedor" placeholder="Nombre del Proveedor">
                 <label for="contacto"><i class="fas fa-user"></i> Contacto: <span style="color: red;"> *</span></label>
                 <input type="text" name="contacto" id="contacto" placeholder="Nombre completo del contacto">

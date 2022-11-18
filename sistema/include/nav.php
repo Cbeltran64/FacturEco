@@ -22,10 +22,7 @@
 						<li><a href="./lista_cliente.php"><i class="fas fa-users"></i>  Lista de Clientes</a></li>
 					</ul>
 				</li>
-				<?php
-					if($_SESSION['rol'] == 1 || $_SESSION['rol'] == 2)
-					{	
-				?>
+				<?php if($_SESSION['rol'] == 1 || $_SESSION['rol'] == 2) {	?>
 				<li class="principal">
 					<a href="#"><i class="fas fa-building"></i> Proveedores</a>
 					<ul>
@@ -33,16 +30,18 @@
 						<li><a href="lista_proveedor.php"><i class="fas fa-th-list"></i> Lista de Proveedores</a></li>
 					</ul>
 				</li>
-				<?php
-					}
-				?>
+				<?php } ?>
+				
 				<li class="principal">
 					<a href="#"><i class="fas fa-cubes"></i> Productos</a>
 					<ul>
-						<li><a href="#"><i class="fas fa-plus"></i> Nuevo Producto</a></li>
-						<li><a href="#"><i class="fas fa-list"></i> Lista de Productos</a></li>
+						<?php if($_SESSION['rol'] == 1 || $_SESSION['rol'] == 2) { ?>
+						<li><a href="registro_producto.php"><i class="fas fa-plus"></i> Nuevo Producto</a></li>
+						<?php } ?>
+						<li><a href="lista_producto.php"><i class="fas fa-list"></i> Lista de Productos</a></li>
 					</ul>
 				</li>
+				
 				<li class="principal">
 					<a href="#"><i class="fas fa-file-alt"></i> Facturas</a>
 					<ul>

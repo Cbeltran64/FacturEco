@@ -10,7 +10,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Sisteme Ventas</title>
+	<title>Lista de Proveedores</title>
 	<?php include "include/scripts.php";?>
 </head>
 <body>
