@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
     //--------------------- SELECCIONAR FOTO PRODUCTO ---------------------
     $("#foto").on("change",function(){
     	var uploadFoto = document.getElementById("foto").value;
@@ -39,5 +38,14 @@ $(document).ready(function(){
     	$("#img").remove();
 
     });
-
+    // Modal Form Add Product
+    $('.add_product').click(function(e){
+        e.preventDefault();
+        var producto = $(this).attr('product');
+        $('.modal').fadeIn();
+    });
 });
+
+function closeModal(){
+    $('.modal').fadeOut();
+}

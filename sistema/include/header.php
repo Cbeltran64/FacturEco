@@ -17,3 +17,18 @@
 		</div>
         <?php include "nav.php";?>
 </header>
+<div class="modal">
+	<div class="bodyModal">
+		<form action="" method="post" name="form_add_product" id = "form_add_product" onsubmit="even.prevenDefault(); sendDataProduct();">
+			<h1><i class="fas fa-cubes" style="font-size: 45pt"></i><br>Agregar producto</h1>
+			<h2 class="nameProducto">Monitor LSD 23 pulgadas</h2>
+			<input type="number" name ="cantidad" id="txtcantidad" placeholder="Cantidad del producto" require><br>
+			<input type="text" name ="precio" id="txtprecio" placeholder="Precio del producto" require><br>
+			<input type="hidden" name ="producto_id" id="producto_id" require><br>
+			<input type="hidden" name ="action" value ="addProduct" require>
+			<div class="alert alertAddProduct"></div>
+			<button type="submit" class="btn_new"><i class="fas fa-plus"></i> Agregar</button>
+			<a href="#" class="btn_ok closeModal" onclick="closeModal();"><i class="fas fa-ban"></i> Cerrar</a>
+		</form>
+	</div>
+</div>

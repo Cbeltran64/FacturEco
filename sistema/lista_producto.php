@@ -71,7 +71,7 @@
                             <td class="img_producto"><img src="<?php echo $foto; ?>" alt="<?php echo $data["descripcion"]; ?>"></td>
                             <?php if($_SESSION['rol'] == 1 || $_SESSION['rol'] == 2){?>
 							<td>
-								<a class="link_add" href="agregar_producto.php?id=<?php echo $data["codproducto"]; ?>"><i class="fas fa-plus"></i> Agregar</a>
+								<a class="link_add add_product" product="<?php echo $data["codproducto"]; ?>" href="#"><i class="fas fa-plus"></i> Agregar</a>
 									|
                                 <a class="link_edit" href="editar_producto.php?id=<?php echo $data["codproducto"]; ?>"><i class="far fa-edit"></i> Editar</a>
 									|
