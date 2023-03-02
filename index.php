@@ -48,7 +48,7 @@
 	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
 	<link rel="icon" href="https://www.flaticon.com/premium-icon/icons/svg/1058/1058927.svg">
 </head>
-<body>
+<body> 
     <img class="wave" src="recursos/img/wave.png">
 	<div class="container">
 		<div class="img">

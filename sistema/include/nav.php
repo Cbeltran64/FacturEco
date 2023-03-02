@@ -1,6 +1,6 @@
 <nav>
 			<ul>
-				<li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
+				<li><a href="index.php"><i class="fas fa-home"></i> Inicio</a></li>
 				<?php
 					if($_SESSION['rol'] == 1)
 					{	
@@ -43,10 +43,10 @@
 				</li>
 				
 				<li class="principal">
-					<a href="#"><i class="fas fa-file-alt"></i> Facturas</a>
+					<a href="#"><i class="fas fa-file-alt"></i> Venta</a>
 					<ul>
-						<li><a href="#">Nuevo Factura</a></li>
-						<li><a href="#">Facturas</a></li>
+						<li><a href="#">Nuevo Venta</a></li>
+						<li><a href="#">Venta</a></li>
 					</ul>
 				</li>
 			</ul>
